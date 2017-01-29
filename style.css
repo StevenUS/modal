@@ -1,0 +1,40 @@
+#modalBG {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(5,5,5,0.9);
+    z-index: 1;
+}
+    #modalBG[data-show="true"] {
+        diplay: block;
+    }
+    #modalBG[data-show="false"] {
+        display: none;
+    }
+#modal {
+    text-align: center;
+    outline: 1px solid black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -100px;
+    background: white;
+    z-index: 2;
+}
+    #modal[data-show="true"] {
+        diplay: block;
+    }
+    #modal[data-show="false"] {
+        display: none;
+    }
+#showModal {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    margin-left: -40px;
+}
