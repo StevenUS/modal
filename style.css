@@ -2,14 +2,14 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    position: fixed; /* why do you have position set twice? "position: absolute" is overrwritten in this case */
+    top: 0px; /* When you have CSS set to a value of 0, it should be unitless */
+    left: 0px; /* When you have CSS set to a value of 0, it should be unitless */
     background: rgba(5,5,5,0.9);
     z-index: 1;
 }
     #modalBG[data-show="true"] {
-        diplay: block;
+        diplay: block; /* spelling */
     }
     #modalBG[data-show="false"] {
         display: none;
@@ -27,7 +27,7 @@
     z-index: 2;
 }
     #modal[data-show="true"] {
-        diplay: block;
+        diplay: block; /* spelling */
     }
     #modal[data-show="false"] {
         display: none;
@@ -38,3 +38,10 @@
     left: 50%;
     margin-left: -40px;
 }
+
+
+/*
+    As it currently stands, this implementation works.
+    However, fixed widths are no longer considered cool. They don't scale well and look bad on phones
+    How could you avoid this? (sometimes it isn't possible, but in this case, it is possible)
+ */
