@@ -5,14 +5,26 @@
         <link rel="stylesheet" href="style.css">
         <title></title>
     </head>
-    <body>
 
+    <body>
         <button id="showModal" type="button">Show Modal</button>
         <div id="modalBG" data-show="false"></div>
         <div id="modal" data-show="false">
             <h1>Modal</h1>
-            <button id="hideModal" type="button" >Hide</button>
+            <button id="hideModal" type="button">Hide</button>
         </div>
+
+        <!--
+            Typically, a modal has a container div. This container is the background that you have above.
+            IMO it's better to keep elements as a single block.(there are many exceptions to this).
+
+            <div id="modal1" class="modalContainer">
+                <div class="modalBody">
+                    ...
+                </div>
+            </div>
+        -->
+
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
